@@ -334,8 +334,8 @@ textarea:focus {
 
 .greeting {
     font-size: 20px;
-    color: blue;
-    background-color: yellow;
+    color: white;
+    background-color: #8282f0;
     padding: 10px;
     border: 1px solid black;
     text-align: center;
