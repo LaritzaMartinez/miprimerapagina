@@ -1,0 +1,332 @@
+body {
+    font-family: 'Times New Roman';
+    margin: 0;
+    padding: 0;
+    background-color: #c1b8ea;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-style: normal;
+}
+
+.container {
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #8282f0;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.seccion-1 {
+    display: flex;
+    align-items: start;
+    padding: 10px;
+}
+
+.acerca-de {
+    flex: 1;
+    max-width: fit-content;
+    padding: 10px;
+}
+
+.acerca-imagen img {
+    max-width: 200px;
+    max-height: 300px;
+}
+
+.seccion-2 img {
+    min-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+footer img {
+    width: 100%;
+    /* Ajusta según sea necesario */
+    max-width: 200px;
+    /* Máximo ancho de la imagen */
+    height: auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: start;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #ff6600;
+}
+
+header a i {
+    color: white;
+    font-size: 3em;
+    padding: px;
+}
+
+#leerMasBtn {
+    background-color: #8282f0;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+#contenidoCompleto a {
+    color: #8282f0;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#contenidoCompleto a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para la imagen del certificado */
+#imagenCertificado {
+    max-width: 100%;
+    /* Garantiza que la imagen no exceda el ancho del contenedor */
+}
+
+
+.section-3-h2 {
+    margin-left: 20px;
+}
+
+/* Estilos para la sección y tarjetas */
+.seccion-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 calc(30% - 20px);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: height 0.3s;
+    overflow: hidden;
+}
+
+.card img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 16px;
+}
+
+/* Estilos para la descripción */
+.descripcion {
+    max-height: 3em;
+    /* Altura máxima para aproximadamente 3 líneas */
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+
+/* Estilos para el botón "Ver más" */
+.btn-ver-mas {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+}
+
+
+#check {
+    display: none;
+    float: right;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    header {
+        background-color: rosybrown;
+        /* Cambia lightblue por el color que desees */
+    }
+}
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .acerca-de {
+        font-size: 16px;
+        /* Cambia el tamaño de la fuente según tus necesidades */
+        padding: 10px;
+        /* Ajusta el espaciado según tus necesidades */
+    }
+
+    .imagen-acerca-de {
+        width: 100%;
+        /* Ajusta el ancho de la imagen para que ocupe todo el ancho del contenedor */
+        height: auto;
+        /* Ajusta la altura automáticamente para mantener la proporción */
+    }
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .seccion-2 img {
+        width: 100%;
+        /* Ajusta el ancho de la imagen para que ocupe todo el ancho del contenedor */
+        height: auto;
+        /* Ajusta la altura automáticamente para mantener la proporción */
+    }
+
+    .seccion-3 .card img {
+        width: 100%;
+        /* Ajusta el ancho de la imagen para que ocupe todo el ancho del contenedor */
+        height: auto;
+        /* Ajusta la altura automáticamente para mantener la proporción */
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    #check:checked~.checkbtn {
+        color: #2c3e50;
+    }
+
+}
+
+/* Estilos generales del formulario */
+#contacto {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Estilos adicionales para hacer el formulario más atractivo */
+#contacto h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}

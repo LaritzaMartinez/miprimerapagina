@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <script src="https://kit.fontawesome.com/e8b9524b1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+
+    <script src="script.js" async defer></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <header id="encabezado">
+            <h1>Mi Web</h1>
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li>Inicio</li>
+                    <li>Acerca de mí</li>
+                    <li>Trabajos</li>
+                    <li>Servicios</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="seccion-principal">
+            <section class="seccion-1">
+                <div class="acerca-de">
+                    <h2>Acerca de mí</h2>
+                    <p>¡Bienvenido a mi espacio! Aquí, aprenderás más sobre mí.</p>
+                    <p class="about">Me llamo Laritza Martínez, soy cubana pero vivo en Montevideo/Uruguay. Mis pasatiempos son leer
+                        libros de historias criminalísticas y sobre romance, también me gusta salir a caminar por la
+                        Rambla
+                        por las tardes. Soy una estudiante continua del mundo del Testing de software, buscando
+                        oportunidades para integrarme a este mundo de tecnología.</p>
+                </div>
+                <div class="acerca-imagen">
+                    <img src="img/hero-img.jpg" alt="imagen personal" />
+                </div>
+            </section>
+
+            <section class="seccion-2">
+                <img src="img/img-banner.jpg" alt="Imagen de carrusel">
+            </section>
+
+            <h2 class="section-3-h2">Portfolio, cursos y hobbies</h2>
+            <Section class="seccion-3 tarjeta">
+                <div class="card" id="card1">
+                    <img src="img/img-estudios.jpg" alt="Imagen 1">
+                    <h3>Estudios</h3>
+                    <p class="descripcion"> 26/06/2023 Fase 2 Jóvenes a Programar (Plan Ceibal)- Testing.<br>
+                        Fase 1 Jóvenes a Programar (Plan Ceibal)- Introducción a la Programación.<br>
+                        14/04/2022 Testing QA Manual (CoderHouse).
+                    </p>
+                    <button class="btn-ver-mas" onclick="toggleDescripcion('card1')">Ver más</button>
+                </div>
+
+                <div class="card" id="card2">
+                    <img src="img/img-portfolio.webp" alt="Imagen 2">
+                    <h3>Portfolio</h3>
+                    <p class="descripcion">¡Bienvenido/a a mi portafolio de testing! A lo largo de mi carrera, he tenido
+                        la oportunidad de realizar pruebas en diversas plataformas y aplicaciones, utilizando una
+                        variedad de enfoques y metodologías. Desde pruebas exploratorias hasta pruebas exhaustivas, mi
+                        objetivo siempre ha sido garantizar la calidad y funcionalidad de los productos digitales.<br>
+
+                        Proyecto destacado: Testing Exhaustivo en Indian E-commerce
+                        Durante mi formación en CoderHouse, tuve la oportunidad de aplicar mis habilidades de testing en
+                        un proyecto emocionante: Indian, un e-commerce dedicado a la venta de ropa, accesorios y más.
+                        Para este proyecto, realicé un exhaustivo análisis de cada aspecto de la plataforma, centrándome
+                        en la experiencia del usuario, la funcionalidad del sitio y la detección de posibles
+                        fallos.<br><br>
+
+                        Entregables del Proyecto:<br>
+
+                        Reporte de Pruebas: Detallando los diferentes tipos de pruebas realizadas, los casos de prueba
+                        diseñados y ejecutados, así como las estrategias de testing empleadas.<br><br>
+                        Reporte de Resultados: Documentando los resultados obtenidos durante las pruebas, incluyendo
+                        hallazgos positivos y áreas de mejora identificadas. <br>
+                        Reporte de Bugs: Enumerando y describiendo todos los errores y fallos encontrados durante el
+                        proceso de testing, junto con su gravedad y prioridad.<br>
+                        Reporte de Mejoras: Propuestas concretas para mejorar la usabilidad, la funcionalidad y la
+                        experiencia general del usuario en la plataforma.<br>
+                        ¡Ver el proyecto en acción! <a
+                            href="https://drive.google.com/drive/folders/1Ti5yY75nncOhl9SewF0owNpKu6H2jiKs?usp=sharing">Enlace
+                            al reporte de pruebas</a> </p>
+                    <button class="btn-ver-mas" onclick="toggleDescripcion('card2')">Ver más</button>
+                </div>
+
+                <div class="card" id="card3">
+                    <img src="img/img-hobbies.jpg" alt="Imagen 3">
+                    <h3>Hobbies</h3>
+                    <p class="descripcion">¡Bienvenido/a a mi sección de pasatiempos! Cuando no estoy inmerso/a en el
+                        mundo del testing y la tecnología, disfruto de diversas actividades que me permiten relajarme y
+                        disfrutar de mi tiempo libre.<br><br>
+
+                        Entretenimiento Audiovisual<br>
+                        Me encanta sumergirme en series que despierten mi interés y mantengan mi adrenalina en lo más
+                        alto. Soy especialmente aficionado/a a las miniseries de suspenso y emoción, ya que me permiten
+                        disfrutar de tramas intensas sin comprometerme a largas temporadas. Además, disfruto de los
+                        shows de canto, realitys y bailes, encontrando inspiración y entretenimiento en la diversidad de
+                        talentos y experiencias que se presentan.<br><br>
+
+                        Explorando al Aire Libre<br>
+                        Salir a caminar y descubrir zonas verdes es una de mis actividades favoritas para conectar con
+                        la naturaleza y despejar la mente. Disfruto especialmente de hacer picnics con amigos y
+                        familiares, creando momentos memorables rodeados de buen ambiente y hermosos paisajes.<br><br>
+
+                        Lectura Inspiradora<br>
+                        Aunque no soy un ávida lectora, encuentro gran satisfacción en sumergirme en libros de misterio,
+                        crímenes y superación. Cada historia me transporta a mundos desconocidos, desafiando mi mente y
+                        alimentando mi curiosidad por lo desconocido.
+
+                    </p>
+                    <button class="btn-ver-mas" onclick="toggleDescripcion('card3')">Ver más</button>
+                </div>
+            </section>
+    </div>
+
+    </div>
+    </Section>
+    </main>
+
+   
+    </div>
+    <script>
+        function toggleDescripcion(cardId) {
+            var card = document.getElementById(cardId);
+            var descripcion = card.querySelector('.descripcion');
+            var btnVerMas = card.querySelector('.btn-ver-mas');
+
+            if (descripcion.style.maxHeight === '' || descripcion.style.maxHeight === '3em') {
+                descripcion.style.maxHeight = '100%';
+                btnVerMas.textContent = 'Ver menos';
+            } else {
+                descripcion.style.maxHeight = '3em';
+                btnVerMas.textContent = 'Ver más';
+            }
+        }
+    </script>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>¡Esperamos tu consulta!</p>
+    <form id="contact-form" action="#" method="POST">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+        <div id="error-message" class="error-message"></div>
+    </form>
+</section>
+
+<footer>
+    <h3>Datos importantes</h3>
+    <ul>
+        <li><b>Correo electrónico: </b><a href="mailto:laritzamartinez98@gmail.com">laritzamartinez98@gmail.com</a>
+        </li>
+        <li><b>Número de contacto:</b> <a href="tel:+59896397711">+598 096 397 711</a></li>
+        <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/laritza-martinez-937248240" target="_blank">Mi
+                Perfil de LinkedIn</a></li>
+    </ul>
+</footer>
+
+</body>
+
+</html>
