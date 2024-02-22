@@ -330,3 +330,12 @@ textarea:focus {
     border-color: #007bff;
     outline: none;
 }
+
+
+.greeting {
+    font-size: 20px;
+    color: blue;
+    background-color: yellow;
+    padding: 10px;
+    border: 1px solid black;
+}
