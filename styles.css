@@ -339,4 +339,7 @@ textarea:focus {
     padding: 10px;
     border: 1px solid black;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
